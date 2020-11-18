@@ -11,7 +11,13 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",
-        "sminnee/phpunit-mock-objects": "^3.4.5"
+        "sminnee/phpunit-mock-objects": "^3.4.5",
+        "silverstripe/behat-extension": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "MySite\\Tests\\Behat\\": "app/tests/behat/src"
+        }
     },
     "extra": {
         "resources-dir": "_resources",

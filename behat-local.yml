@@ -1,0 +1,22 @@
+#
+# docs todo
+#
+default:
+  suites:
+    app:
+      autoload:
+        - app/tests/behat/src/
+      paths:
+        - app/tests/behat/features
+      contexts:
+        - MySite\Tests\Behat\FeatureContext
+        - SilverStripe\BehatExtension\Context\BasicContext
+  extensions:
+    SilverStripe\BehatExtension\MinkExtension:
+      default_session: facebook_web_driver
+      javascript_session: facebook_web_driver
+      facebook_web_driver:
+        browser: chrome
+        wd_host: "http://127.0.0.1:9515"
+    SilverStripe\BehatExtension\Extension:
+      screenshot_path: "_artifacts/screenshots"
