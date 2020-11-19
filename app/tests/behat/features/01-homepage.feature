@@ -9,5 +9,4 @@ Feature:
 
   Scenario: Footer
     When I go to "home"
-    Then I should see "Sarma" in the ".footer " element
-
+    Then I should see "Sara" in the ".footer " element
