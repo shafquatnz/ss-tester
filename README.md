@@ -29,3 +29,7 @@ If the Silverstripe installation is setup with a domain name like testsite.test,
 A simple web page that uses the aforementioned helper helper to allow for input of two numbers and perfom the addition is available in the /add-numbers url (also linked in the top navigation). Start by typing in `chromedriver` in a terminal window on your Linux GUI instance. Then on a new terminal, type in `SS_BASE_URL="http://testsite.test" php ./vendor/bin/behat --config=behat-local.yml`
 
 Behat tests are located on `app\tests\behat` and the configuration file is `behat-local.yml` in the root folder.
+
+## Quickstart ##
+
+If you have followed along with a quick start guide and have a Silverstripe setup on an Ubuntu 16 VM, see the file [QUICKSTART.md](QUICKSTART.md)
